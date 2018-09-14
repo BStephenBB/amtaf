@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding-bottom: 200px;
+  margin: 0;
+  color: #292929;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+h1 {
+  font-size: 8vw;
+}
+
+p {
+  color: #333;
+  font-size: 1.15rem;
+  line-height: 1.4rem;
+}
+p::selection,
+h1::selection,
+h2::selection {
+  background: rgba(108, 212, 255, 0.6);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  position: relative;
+  width: 93%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after,
+.container:after {
+  clear: both;
+}
+
+@media (min-width: 1600px) {
+  body {
+    font-size: 1.2em;
+  }
+  p {
+    max-width: 1000px;
+  }
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  fill: currentColor;
+}

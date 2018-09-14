@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AMTAF</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:700|Raleway:500" rel="stylesheet">
+    <link rel="icon" href="../amtafLogo.png">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="icon-heart" viewBox="0 0 32 32">
+          <title>love</title>
+          <path d="M29.193 5.265c-3.629-3.596-9.432-3.671-13.191-0.288-3.76-3.383-9.561-3.308-13.192 0.288-3.741 3.704-3.741 9.709 0 13.415 1.069 1.059 11.053 10.941 11.053 10.941 1.183 1.172 3.096 1.172 4.278 0 0 0 10.932-10.822 11.053-10.941 3.742-3.706 3.742-9.711-0.001-13.415zM27.768 17.268l-11.053 10.941c-0.393 0.391-1.034 0.391-1.425 0l-11.053-10.941c-2.95-2.92-2.95-7.671 0-10.591 2.844-2.815 7.416-2.914 10.409-0.222l1.356 1.22 1.355-1.22c2.994-2.692 7.566-2.594 10.41 0.222 2.95 2.919 2.95 7.67 0.001 10.591zM9.253 7.501c0.277 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5h-0.001c-1.794 0-3.249 1.455-3.249 3.249v0.001c0 0.276-0.224 0.5-0.5 0.5s-0.5-0.224-0.5-0.5v0c0-2.346 1.901-4.247 4.246-4.249 0.002 0 0.002-0.001 0.004-0.001z"></path>
+        </symbol>
+      </defs>
+    </svg>
+    <div class="background"></div>
+    <div class="container intro">
+      <div class="row">
+        <div class="col-12@sm">
+          <h1>AMTAF</h1>
+        </div>
+        <div class="col-9@sm">
+          <p class="type-display-subhead">A means to a frontend</p>
+          <p class="type-display-desc">Learning front-end development can be confusing. There are so many technologies and buzzwords -- understanding all the jargon is overwhelming. Hopefully this resouce can help demystify the front-end!</p>
+        </div>
+      </div>
+    </div>
+    <div class="container card components-container">
+      <div class="row">
+        <div class="col-9@sm">
+          <h4 class="filter__label">Filter By</h4>
+          <div class="filter__options clearfix">
+            <button class="filter__button" data-group="language">language</button>
+            <button class="filter__button" data-group="preprocessor">preprocessor</button>
+            <button class="filter__button" data-group="library">library</button>
+            <button class="filter__button" data-group="framework">framework</button>
+            <button class="filter__button" data-group="requests">requests</button>
+            <button class="filter__button" data-group="testing">testing</button>
+            <button class="filter__button" data-group="CMS">CMS</button>
+            <button class="filter__button" data-group="hosting">hosting</button>
+            <button class="filter__button" data-group="state management">state</button>
+            <button class="filter__button" data-group="other">other</button>
+          </div>
+          <input class="filter__search js-shuffle-search" input type="search" placeholder="Search..." aria-label="Search odo components">
+        </div>
+      </div>
+      <div class="row">
+        <div class="technologies clearfix" id="cards-container">
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;requests&quot;]">
+            <div class="content">
+              <h2 class="title">Ajax</h2>
+              <p>A broad group of Web technologies that can be used to implement a Web application that asynchronously communicates with a server in the background. Allows for a page to update without reloading.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">requests</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Angular</h2>
+              <p>A JavaScript framework that helps developers build applications. Originially developed by Google.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;hosting&quot;]">
+            <div class="content">
+              <h2 class="title">Apache</h2>
+              <p>The most widely used web server software.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">hosting</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;definition&quot;]">
+            <div class="content">
+              <h2 class="title">API</h2>
+              <p>Stands for 'Application Programming Interface' and is the software intermediary that allows two applications to talk to each other.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">definition</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;other&quot;]">
+            <div class="content">
+              <h2 class="title">Apollo</h2>
+              <p>A family of technologies: Apollo Client to connect data to the UI, Apollo Engine for infrastructure and tooling, and Apollo Server to translate REST APIs and backends into a GraphQL schema.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">other</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;other&quot;]">
+            <div class="content">
+              <h2 class="title">ASP.NET</h2>
+              <p>A unified Web development model that includes the services necessary to build enterprise-class Web applications with a minimum of coding. Part of the .NET Framework</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">other</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;requests&quot;]">
+            <div class="content">
+              <h2 class="title">Axios</h2>
+              <p>A Promise-based HTTP client for JavaScript which can be used in front-end applications and in Node.js backends</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">requests</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;preprocessor&quot;]">
+            <div class="content">
+              <h2 class="title">Babel</h2>
+              <p>A JavaScript compiler that is mainly used to convert ES5+ code into a backwards compatible version of JavaScript in current and older browsers or environments.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">preprocessor</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Backbone.js</h2>
+              <p>A lightweight JavaScript MVC Web application framework.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;convention&quot;]">
+            <div class="content">
+              <h2 class="title">BEM</h2>
+              <p>A naming convention for front-end code. Stands for 'Block Element Modifier.'</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">convention</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Bootstrap</h2>
+              <p>A front-end framework for designing websites and web applications. Originally developed by Twitter.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Bulma</h2>
+              <p>An open source CSS framework based on Flexbox </p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;preprocessor&quot;]">
+            <div class="content">
+              <h2 class="title">CoffeeScript</h2>
+              <p>A programming language that gets compiled to JavaScript. It adds syntactic sugar inspired by Ruby, Python and Haskell in an effort to enhance JavaScript's brevity and readability.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">preprocessor</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;language&quot;]">
+            <div class="content">
+              <h2 class="title">CSS</h2>
+              <p>Stands for 'Cascading Style Sheets' and is a language used to describe how HTML elements are displayed</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">language</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;library&quot;]">
+            <div class="content">
+              <h2 class="title">D3</h2>
+              <p>A JavaScript library for data visualization. Stands for Data-Driven Documents</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">library</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Django</h2>
+              <p>A web application framework written in Python.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;other&quot;]">
+            <div class="content">
+              <h2 class="title">Docker</h2>
+              <p>A tool for developing applications with containers. Containers allow an application to be packaged up with all the parts it needs and shiped as one package. This ensures that the application will run properly on all machines</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">other</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;other&quot;]">
+            <div class="content">
+              <h2 class="title">DOM</h2>
+              <p>Stands for Document Object Model and is a programming interface for HTML and XML documents. It represents the page as nodes and objects so that programs can change the document structure, style, and content.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">other</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;CMS&quot;]">
+            <div class="content">
+              <h2 class="title">Drupal</h2>
+              <p>A free and open source CMS written in PHP</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">CMS</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;library&quot;]">
+            <div class="content">
+              <h2 class="title">Electron</h2>
+              <p>An open source library for building cross-platform desktop applications with HTML, CSS, and JavaScript.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">library</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Ember JS</h2>
+              <p>A client-side JavaScript framework for creating single-page web applications</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;plugin&quot;]">
+            <div class="content">
+              <h2 class="title">Emmit</h2>
+              <p>A text editor plugin that helps write HTML and CSS quickly</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">plugin</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;testing&quot;]">
+            <div class="content">
+              <h2 class="title">Enzyme</h2>
+              <p>A JavaScript Testing utility for React</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">testing</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;language&quot;]">
+            <div class="content">
+              <h2 class="title">ES6</h2>
+              <p>Version 6 of the ECMA Script (JavaScript) programming language. It added many more features intended to make large-scale software development easier. Released in 2015</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">language</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;linter&quot;]">
+            <div class="content">
+              <h2 class="title">eslint</h2>
+              <p>An open source JavaScript linting utility</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">linter</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Express</h2>
+              <p>A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;requests&quot;]">
+            <div class="content">
+              <h2 class="title">Fetch</h2>
+              <p>An API that provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline. Also provides a global fetch() method that provides to fetch resources asynchronously across the network.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">requests</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;design&quot;]">
+            <div class="content">
+              <h2 class="title">Figma</h2>
+              <p>An online UX design and collaboration tool</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">design</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Flask</h2>
+              <p>A micro web framework written in Python. It is classified as a microframework since it does not require particular tools or libraries.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;state management&quot;]">
+            <div class="content">
+              <h2 class="title">Flux</h2>
+              <p>An application architecture for building user interfaces. Commonly used with React.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">state management</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;definition&quot;]">
+            <div class="content">
+              <h2 class="title">Framework</h2>
+              <p>Software that provides a standard way to build and deploy web applications. Web frameworks aim to automate the overhead associated with common activities performed in web development.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">definition</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;static site gen&quot;]">
+            <div class="content">
+              <h2 class="title">Gatsby</h2>
+              <p>A static site generator for React</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">static site gen</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;language&quot;]">
+            <div class="content">
+              <h2 class="title">GraphQL</h2>
+              <p>A query language for APIs and a runtime for fulfilling those queries with existing data.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">language</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;task runner&quot;]">
+            <div class="content">
+              <h2 class="title">Grunt</h2>
+              <p>A JavaScript task runner which is a tool used to automatically perform frequent tasks such as minification, compilation, unit testing, and linting.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">task runner</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;task runner&quot;]">
+            <div class="content">
+              <h2 class="title">Gulp</h2>
+              <p>A JavaScript task runner built on Node.js and npm, used for automation of time-consuming and repetitive tasks involved in web development</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">task runner</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;hosting&quot;]">
+            <div class="content">
+              <h2 class="title">Heroku</h2>
+              <p>A platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">hosting</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;language&quot;]">
+            <div class="content">
+              <h2 class="title">HTML</h2>
+              <p>The standard markup language for creating Web pages. Stands for Hyper Text Markup Language. Describes the structure of Web pages using markup.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">language</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;requests&quot;]">
+            <div class="content">
+              <h2 class="title">HTTP</h2>
+              <p>An application protocol for distributed, collaborative, and hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web. Stands for 'Hypertext Transfer Protocol</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">requests</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;requests&quot;]">
+            <div class="content">
+              <h2 class="title">HTTPS</h2>
+              <p>An extension of HTTP for secure communication over a computer network. In HTTPS, the communication protocol is encrypted using TLS. Stands for 'Hypertext Transfer Protocol Secure</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">requests</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;testing&quot;]">
+            <div class="content">
+              <h2 class="title">Jasmine</h2>
+              <p>A Behavior Driven Development testing framework for JavaScript. Does not rely on browsers, DOM, or any JavaScript framework. Thus it's suited for websites, Node.js projects, or anywhere that JavaScript can run.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">testing</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;language&quot;]">
+            <div class="content">
+              <h2 class="title">JavaScript</h2>
+              <p>A programming language for the web that is primarily used to enhance web pages to provide a more user friendly experience. Alongside HTML and CSS, JavaScript is one of the three core Web technologies</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">language</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;static site gen&quot;]">
+            <div class="content">
+              <h2 class="title">Jekyll</h2>
+              <p>A simple, blog-aware, static site generator</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">static site gen</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;testing&quot;]">
+            <div class="content">
+              <h2 class="title">Jest</h2>
+              <p>A JavaScript and React testing solution developed by Facebook.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">testing</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;CMS&quot;]">
+            <div class="content">
+              <h2 class="title">Joomla!</h2>
+              <p>The second most popular CMS. Comprehensive CMS functionalities are included without installing extensions, unlike some of the other content management systems.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">CMS</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;library&quot;]">
+            <div class="content">
+              <h2 class="title">jQuery</h2>
+              <p>A JavaScript library designed to simplify the client-side scripting of HTML. jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">library</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;other&quot;]">
+            <div class="content">
+              <h2 class="title">JSON</h2>
+              <p>JSON or JavaScript Object Notation is a data-interchange format. Designed to be easy for both humans to read and write and machines to parse and generate.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">other</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;other&quot;]">
+            <div class="content">
+              <h2 class="title">JSX</h2>
+              <p>A XML/HTML-like syntax used by React that extends ECMAScript so that XML/HTML-like text can co-exist with JavaScript/React code.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">other</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;testing&quot;]">
+            <div class="content">
+              <h2 class="title">Karma</h2>
+              <p>A tool that allows JavaScript code to be executed in multiple real browsers. The main purpose of Karma is to simplify test-driven development.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">testing</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;software stack&quot;]">
+            <div class="content">
+              <h2 class="title">LAMP</h2>
+              <p>A software stack for building dynamic web sites and applications. The LAMP stack consists of Linux/GNU, Apache, MySQL, and PHP</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">software stack</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Laravel</h2>
+              <p>A PHP web framework developing web applications following the MVC architectural pattern and based on Symfony.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;library&quot;]">
+            <div class="content">
+              <h2 class="title">Library</h2>
+              <p>A collection of implementations of behavior, written in terms of a language, that has a well-defined interface by which the behavior is invoked.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">library</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;linter&quot;]">
+            <div class="content">
+              <h2 class="title">Linter</h2>
+              <p>A tool that analyzes code to flag programming errors, bugs, stylistic errors, and suspicious constructs.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">linter</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;library&quot;]">
+            <div class="content">
+              <h2 class="title">Lowdash</h2>
+              <p>A JavaScript library for working with arrays, numbers, objects, and strings</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">library</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;other&quot;]">
+            <div class="content">
+              <h2 class="title">Material Design</h2>
+              <p>A set of design guidelines created by Google</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">other</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;software stack&quot;]">
+            <div class="content">
+              <h2 class="title">MEAN</h2>
+              <p>A JavaScript software stack for building dynamic web sites and applications. The MEAN stack consists of MongoDB, Express.js, Angular, and Node.js.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">software stack</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;software stack&quot;]">
+            <div class="content">
+              <h2 class="title">MERN</h2>
+              <p>A JavaScript software stack for building dynamic web sites and applications. The MERN stack consists of MongoDB, Express.js, React, and Node.js.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">software stack</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;hosting&quot;]">
+            <div class="content">
+              <h2 class="title">mLab</h2>
+              <p>A fully managed cloud database service that hosts MongoDB databases.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">hosting</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;state management&quot;]">
+            <div class="content">
+              <h2 class="title">MobX</h2>
+              <p>A state management solution, often used with React</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">state management</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;testing&quot;]">
+            <div class="content">
+              <h2 class="title">Mocha</h2>
+              <p>A JavaScript testing framework that runs on Node.js and in the browser.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">testing</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;database&quot;]">
+            <div class="content">
+              <h2 class="title">MongoDB</h2>
+              <p>A document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemata.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">database</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;database&quot;]">
+            <div class="content">
+              <h2 class="title">Mongoose</h2>
+              <p>A MongoDB object modeling tool designed to work in an asynchronous environment.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">database</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">MVC</h2>
+              <p>Stands for Model-View-Controller and is an architectural pattern that separates an application into three main logical components: the model, the view, and the controller.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;database&quot;]">
+            <div class="content">
+              <h2 class="title">mySQL</h2>
+              <p>An open-source relational database management system</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">database</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Next.js</h2>
+              <p>A lightweight framework for static and server‑rendered applications. Commonly used with React.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;other&quot;]">
+            <div class="content">
+              <h2 class="title">NGINX</h2>
+              <p>Software for web serving, reverse proxying, caching, load balancing, and media streaming. Can also function as a proxy server for email and a reverse proxy and load balancer for HTTP, TCP, and UDP servers.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">other</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;language&quot;]">
+            <div class="content">
+              <h2 class="title">Node.js</h2>
+              <p>A JavaScript run-time environment that executes JavaScript code outside of a browser</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">language</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;package manager&quot;]">
+            <div class="content">
+              <h2 class="title">npm</h2>
+              <p>Stands for Node Package Manager and is the default package manager for Node.js</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">package manager</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Nuxt.js</h2>
+              <p>A framework for creating Universal Vue.js Applications.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;design&quot;]">
+            <div class="content">
+              <h2 class="title">Photoshop</h2>
+              <p>A raster graphics editor developed and published by Adobe Systems</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">design</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;language&quot;]">
+            <div class="content">
+              <h2 class="title">PHP</h2>
+              <p>A server-side scripting language designed for Web development, but also used as a general-purpose programming language</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">language</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;other&quot;]">
+            <div class="content">
+              <h2 class="title">pip</h2>
+              <p>Package manager for Node.js</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">other</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;database&quot;]">
+            <div class="content">
+              <h2 class="title">PostgreSQL</h2>
+              <p>An object-relational database management system with an emphasis on extensibility and standards compliance.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">database</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;testing&quot;]">
+            <div class="content">
+              <h2 class="title">Protractor</h2>
+              <p>An end-to-end test framework for Angular and AngularJS applications.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">testing</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;preprocessor&quot;]">
+            <div class="content">
+              <h2 class="title">Pug</h2>
+              <p>An HTML templating language.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">preprocessor</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;language&quot;]">
+            <div class="content">
+              <h2 class="title">Python</h2>
+              <p>An interpreted high-level programming language for general-purpose programming.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">language</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;library&quot;]">
+            <div class="content">
+              <h2 class="title">React</h2>
+              <p>A JavaScript library for building user interfaces. Maintained by Facebook and a community of individual developers and companies.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">library</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;state management&quot;]">
+            <div class="content">
+              <h2 class="title">Redux</h2>
+              <p>A JavaScript library for managing application state. Most commonly used with libraries such as React or Angular for building user interfaces.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">state management</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;language&quot;]">
+            <div class="content">
+              <h2 class="title">Ruby</h2>
+              <p>A dynamic, interpreted, reflective, object-oriented, general-purpose programming language.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">language</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Ruby on Rails</h2>
+              <p>A MVC server-side web application framework written in Ruby</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;preprocessor&quot;]">
+            <div class="content">
+              <h2 class="title">SASS</h2>
+              <p>An indent-based preprocessor scripting language that is interpreted or compiled into CSS. Stands for 'Syntactically Awesome Style Sheets'</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">preprocessor</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;preprocessor&quot;]">
+            <div class="content">
+              <h2 class="title">SCSS</h2>
+              <p>A bracked-based preprocessor scripting language that is interpreted or compiled into CSS. Stands for 'Sassy CSS'</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">preprocessor</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;design&quot;]">
+            <div class="content">
+              <h2 class="title">Sketch</h2>
+              <p>A vector graphics editor for Apple's macOS</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">design</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;database&quot;]">
+            <div class="content">
+              <h2 class="title">SQL</h2>
+              <p>A domain-specific language used in programming and designed for managing data held in a relational database management system. Stands for 'Structured Query Language'</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">database</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;CMS&quot;]">
+            <div class="content">
+              <h2 class="title">Squarespace</h2>
+              <p>An simple online website builder</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">CMS</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;requests&quot;]">
+            <div class="content">
+              <h2 class="title">SSL</h2>
+              <p>A standard security protocol for establishing encrypted links between a web server and a browser in an online communication. Stand for 'Secure Sockets Layer'</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">requests</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;preprocessor&quot;]">
+            <div class="content">
+              <h2 class="title">Stylus</h2>
+              <p>A dynamic stylesheet preprocessor language that is compiled into CSS</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">preprocessor</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Symfony</h2>
+              <p>A PHP web application framework and a set of reusable PHP components/libraries.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;requests&quot;]">
+            <div class="content">
+              <h2 class="title">TLS</h2>
+              <p>A cryptographic protocol that provides communication security over a computer network. The successor to SSL and stands for 'Transport Layer Security'</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">requests</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;preprocessor&quot;]">
+            <div class="content">
+              <h2 class="title">TypeScript</h2>
+              <p>A typed superset of JavaScript that compiles to plain JavaScript</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">preprocessor</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;framework&quot;]">
+            <div class="content">
+              <h2 class="title">Vue.js</h2>
+              <p>An open-source JavaScript framework for building user interfaces</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">framework</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;state management&quot;]">
+            <div class="content">
+              <h2 class="title">Vuex</h2>
+              <p>A state management pattern and library for Vue.js applications</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">state management</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;software stack&quot;]">
+            <div class="content">
+              <h2 class="title">WAMP</h2>
+              <p>A software stack for building dynamic web sites and applications. The WAMP stack consists of Windows, Apache, MySQL, and PHP</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">software stack</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;other&quot;]">
+            <div class="content">
+              <h2 class="title">Webpack</h2>
+              <p>A JavaScript module bundler.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">other</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;CMS&quot;]">
+            <div class="content">
+              <h2 class="title">Wix</h2>
+              <p>An simple online website builder</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">CMS</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;CMS&quot;]">
+            <div class="content">
+              <h2 class="title">Wordpress</h2>
+              <p>The most popular open source CMS</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">CMS</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;language&quot;]">
+            <div class="content">
+              <h2 class="title">XML</h2>
+              <p>A markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. Stands for eXtensible Markup Language.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">language</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech col-12@xs col-6@sm col-4@md" data-groups="[&quot;other&quot;]">
+            <div class="content">
+              <h2 class="title">Yarn</h2>
+              <p>A JavaScript package manager.</p>
+              <div class="the-tags">
+                <div class="tag">
+                  <div class="innerCircle">
+                    <div class="tooltip">
+                      <div class="tooltip-txt">other</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12@xs col-6@sm col-4@md shuffle-sizer"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p class="footer">Made with 
+      <svg class="icon icon-heart">
+        <use xlink:href="#icon-heart"></use>
+      </svg> by <a href="https://sbrownbourne.com/" target="_blank" rel="noopener noreferrer">Stephen Brown-Bourne</a>
+    </p>
+  </footer>
+</html>
+<script src="../js/shuffle.min.js"></script>
+<script src="../js/shuffler.js"></script>

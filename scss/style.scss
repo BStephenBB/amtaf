@@ -1,0 +1,475 @@
+$color1: rgba(108, 212, 255, 1);
+$color2: rgba(139, 128, 249, 1);
+$color4: rgba(125, 131, 255, 1);
+$color5: rgba(0, 127, 255, 1);
+
+$cardColor: #ffffff;
+$leftGrad: $color2;
+$rightGrad: $color4;
+$containerColor: $color1;
+$tagBtnColor: $color5;
+$btnActive: $color5;
+$searchFocus: $color5;
+
+// tag colors
+$language: #3772ff;
+$framework: rgba(139, 128, 249, 1);
+$testing: #eb435c;
+$requests: #f55d3e;
+$preprocessor: #f7aef8;
+$CMS: #ffa400;
+$library: #e88d67;
+$hosting: #bbe697;
+$state: #fff958;
+
+.container {
+  max-width: none;
+  width: auto;
+  padding-left: 5.625%;
+  padding-right: 5.625%;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 6px;
+}
+
+.row {
+  // max-width: 1280px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.col-12\@xs,
+.col-6\@sm,
+.col-9\@sm,
+.col-4\@md {
+  float: left;
+  min-height: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.col-12\@xs {
+  width: 100%;
+}
+.col-9\@sm {
+  width: 100%;
+  // width: 75%;
+}
+
+.card {
+  background-color: $containerColor;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 7.28%;
+    padding-right: 7.28%;
+  }
+
+  .col-6\@sm {
+    width: 50%;
+  }
+
+  .col-9\@sm {
+    width: 100%;
+    // width: 75%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    padding-top: 16px;
+  }
+
+  .container {
+    padding-left: 10.9%;
+    padding-right: 10.9%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .card {
+    margin-bottom: 16px;
+  }
+
+  [class*="col-"] {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .col-4\@md {
+    width: 33.333%;
+  }
+}
+
+@media screen and (min-width: 1592px) {
+  .container {
+    padding-left: 116px;
+    padding-right: 116px;
+  }
+
+  .col-4\@md {
+    width: 25%;
+  }
+}
+
+.background {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+  background-color: $color4;
+  background-image: linear-gradient(to bottom right, $leftGrad, $rightGrad);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.intro {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .intro {
+    padding-bottom: 60px;
+  }
+}
+
+.type-display-title {
+  margin: 0;
+  font-size: 8vw;
+}
+
+.type-display-subhead {
+  font-size: 4vw;
+  color: #fff;
+}
+
+.type-display-desc {
+  font-size: 1.15rem;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .type-display-title {
+    font-size: 6vw;
+  }
+
+  .type-display-subhead {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .type-display-title {
+    font-size: 60px;
+  }
+}
+
+.components-container {
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.tech {
+  position: relative;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .tech {
+    margin-top: 10px;
+    margin-bottom: 6px;
+  }
+}
+
+/*----- content of the card, most important styling here --------- */
+
+.technologies {
+  overflow: visible !important;
+}
+
+.content {
+  height: 200px; // set the height here
+  padding: 2% 2% 0px; // adjust this to add space, margins etc
+  background: $cardColor;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.35);
+  position: relative;
+  transition: 100ms ease-out;
+  // overflow-x: hidden;
+  &:hover {
+    transform: scale(1.01);
+  }
+  p {
+    margin: 0;
+  }
+  h2 {
+    line-height: 2rem;
+    margin-bottom: 1.5%;
+  }
+}
+
+.content > :last-child {
+  margin-bottom: 0;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+$border-width: 1px;
+.tag {
+  position: absolute;
+  right: 2.5%;
+  top: 3%;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border: {
+    radius: 100%;
+    style: solid;
+    width: $border-width;
+    color: #333;
+  }
+  .innerCircle {
+    width: 18px;
+    height: 18px;
+    background-color: #91fbff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: {
+      radius: 100%;
+      style: solid;
+      width: $border-width;
+      color: #333;
+    }
+  }
+}
+// conditional stying for the tag color, use a mixin with input do do this later maybe
+[data-groups*="language"] {
+  .innerCircle {
+    background-color: $language;
+  }
+}
+[data-groups*="framework"] {
+  .innerCircle {
+    background-color: $framework;
+  }
+}
+[data-groups*="preprocessor"] {
+  .innerCircle {
+    background-color: $preprocessor;
+  }
+}
+[data-groups*="library"] {
+  .innerCircle {
+    background-color: $library;
+  }
+}
+[data-groups*="testing"] {
+  .innerCircle {
+    background-color: $testing;
+  }
+}
+[data-groups*="requests"] {
+  .innerCircle {
+    background-color: $requests;
+  }
+}
+[data-groups*="CMS"] {
+  .innerCircle {
+    background-color: $CMS;
+  }
+}
+[data-groups*="hosting"] {
+  .innerCircle {
+    background-color: $hosting;
+  }
+}
+[data-groups*="state management"] {
+  .innerCircle {
+    background-color: $state;
+  }
+}
+.tooltip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+  &:hover {
+    .tooltip-txt {
+      visibility: visible;
+    }
+  }
+  .tooltip-txt {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 175%;
+    left: 50%;
+    margin-left: -60px;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      z-index: 1;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: black transparent transparent transparent;
+    }
+  }
+}
+
+.shuffle-sizer {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.filter__label {
+  display: block;
+  margin-top: 0;
+  margin-right: 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.filter__options {
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.35);
+}
+
+.filter__options .filter__button {
+  float: left;
+}
+
+.filter__options .filter__button + .filter__button {
+  margin-left: -1px;
+}
+
+.filter__options .filter__button:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.filter__options .filter__button:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.filter__button {
+  display: inline-block;
+  font-weight: 400;
+  font-family: Raleway, serif;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid $tagBtnColor;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+  transition: 0.2s ease-out;
+  color: $tagBtnColor;
+  background-image: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.filter__button:hover,
+.filter__button--active {
+  color: #fff;
+  background-color: $btnActive;
+}
+
+.filter__button--active {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.filter__search {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-top: 8px;
+  font-size: 1rem;
+  font-family: Raleway, serif;
+  line-height: 1.25;
+  color: #464a4c;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.filter__search:focus {
+  color: #464a4c;
+  background-color: #fff;
+  border-color: $searchFocus;
+  outline: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .filter__options {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .filter__search {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-left: 24px;
+  }
+
+  .filter__label {
+    display: inline-block;
+  }
+
+  .type--right\@sm {
+    text-align: right;
+  }
+}
+
+footer {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.footer {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}

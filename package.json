@@ -4,7 +4,7 @@
   "description": "\"A means to a Frontend\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
     "scss": "node-sass --watch scss -o css",
     "build": "webpack",
     "pug": "pug -w ./pug -O env.js -o ./ -P"
@@ -19,7 +19,9 @@
   ],
   "author": "Stephen Brown-Bourne",
   "license": "MIT",
+  "homepage": "https://BStephenBB.github.io/amtaf",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "shufflejs": "^5.1.2"
   },
   "devDependencies": {

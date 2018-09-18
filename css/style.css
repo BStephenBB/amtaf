@@ -204,6 +204,9 @@
 [data-groups*="state management"] .innerCircle {
   background-color: #fff958; }
 
+[data-groups*="stack"] .innerCircle {
+  background-color: #009900; }
+
 .tooltip {
   position: relative;
   width: 100%;
@@ -287,6 +290,10 @@
   background-image: none;
   background-color: transparent;
   cursor: pointer; }
+  @media screen and (max-width: 930px) {
+    .filter__button {
+      border-radius: 0;
+      margin-top: 1px; } }
 
 .filter__button:hover,
 .filter__button--active {
@@ -317,7 +324,7 @@
   border-color: #007fff;
   outline: 0; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1436px) {
   .filter__options {
     display: inline-block;
     vertical-align: middle; }
@@ -332,9 +339,12 @@
     text-align: right; } }
 
 footer {
-  width: 400px;
+  width: 350px;
   margin: 0 auto;
   text-align: center; }
+  @media screen and (max-width: 400px) {
+    footer {
+      width: 310px; } }
   footer a {
     text-decoration: none;
     color: #fff; }
@@ -343,3 +353,6 @@ footer {
   position: relative;
   z-index: 1;
   color: #fff; }
+  @media screen and (max-width: 400px) {
+    .footer {
+      font-size: 0.9rem; } }

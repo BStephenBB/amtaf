@@ -3,7 +3,7 @@ module.exports = {
     {
       title: "Ajax",
       description:
-        "A broad group of Web technologies that can be used to implement a Web application that asynchronously communicates with a server in the background. Allows for a page to update without reloading.",
+        "A group of Web technologies that can be used to implement a Web application that asynchronously communicates with a server. Allows for a page to update without reloading.",
       tags: ["requests"]
     },
     {
@@ -95,13 +95,13 @@ module.exports = {
     {
       title: "Docker",
       description:
-        "A tool for developing applications with containers. Containers allow an application to be packaged up with all the parts it needs and shiped as one package. This ensures that the application will run properly on all machines",
+        "A tool for developing applications with containers, which allow an app to be packaged up with all the parts it needs and shiped as one package. This ensures that the app will run properly on all machines",
       tags: ["other"]
     },
     {
       title: "DOM",
       description:
-        "Stands for Document Object Model and is a programming interface for HTML and XML documents. It represents the page as nodes and objects so that programs can change the document structure, style, and content.",
+        "Stands for Document Object Model and is a programming interface for HTML and XML documents. It represents a page as nodes and objects so that programs can easily make changes.",
       tags: ["other"]
     },
     {
@@ -180,7 +180,7 @@ module.exports = {
     {
       title: "Gatsby",
       description: "A static site generator for React",
-      tags: ["static site gen"]
+      tags: ["other"]
     },
     {
       title: "GraphQL",
@@ -239,7 +239,7 @@ module.exports = {
     {
       title: "Jekyll",
       description: "A simple, blog-aware, static site generator",
-      tags: ["static site gen"]
+      tags: ["other"]
     },
     {
       title: "Jest",
@@ -256,7 +256,7 @@ module.exports = {
     {
       title: "jQuery",
       description:
-        "A JavaScript library designed to simplify the client-side scripting of HTML. jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications.",
+        "A JavaScript library designed to simplify client-side scripting of HTML. Helps make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications.",
       tags: ["library"]
     },
     {
@@ -281,7 +281,7 @@ module.exports = {
       title: "LAMP",
       description:
         "A software stack for building dynamic web sites and applications. The LAMP stack consists of Linux/GNU, Apache, MySQL, and PHP",
-      tags: ["software stack"]
+      tags: ["stack"]
     },
     {
       title: "Laravel",
@@ -316,13 +316,18 @@ module.exports = {
       title: "MEAN",
       description:
         "A JavaScript software stack for building dynamic web sites and applications. The MEAN stack consists of MongoDB, Express.js, Angular, and Node.js.",
-      tags: ["software stack"]
+      tags: ["stack"]
     },
     {
       title: "MERN",
       description:
         "A JavaScript software stack for building dynamic web sites and applications. The MERN stack consists of MongoDB, Express.js, React, and Node.js.",
-      tags: ["software stack"]
+      tags: ["stack"]
+    },
+    {
+      title: "Meteor",
+      description: "A JavaScript web framework",
+      tags: ["framework"]
     },
     {
       title: "mLab",
@@ -531,7 +536,7 @@ module.exports = {
       title: "WAMP",
       description:
         "A software stack for building dynamic web sites and applications. The WAMP stack consists of Windows, Apache, MySQL, and PHP",
-      tags: ["software stack"]
+      tags: ["stack"]
     },
     {
       title: "Webpack",

@@ -21,6 +21,7 @@ $CMS: #ffa400;
 $library: #e88d67;
 $hosting: #bbe697;
 $state: #fff958;
+$stack: #009900;
 
 .container {
   max-width: none;
@@ -306,6 +307,11 @@ $border-width: 1px;
     background-color: $state;
   }
 }
+[data-groups*="stack"] {
+  .innerCircle {
+    background-color: $stack;
+  }
+}
 .tooltip {
   position: relative;
   width: 100%;
@@ -397,6 +403,10 @@ $border-width: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
+  @media screen and (max-width: 930px) {
+    border-radius: 0;
+    margin-top: 1px;
+  }
   transition: 0.2s ease-out;
   color: $tagBtnColor;
   background-image: none;
@@ -437,7 +447,7 @@ $border-width: 1px;
   outline: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1436px) {
   .filter__options {
     display: inline-block;
     vertical-align: middle;
@@ -458,9 +468,33 @@ $border-width: 1px;
     text-align: right;
   }
 }
+// @media screen and (min-width: 768px) {
+//   .filter__options {
+//     display: inline-block;
+//     vertical-align: middle;
+//   }
+
+//   .filter__search {
+//     display: inline-block;
+//     vertical-align: middle;
+//     margin-top: 0;
+//     margin-left: 24px;
+//   }
+
+//   .filter__label {
+//     display: inline-block;
+//   }
+
+//   .type--right\@sm {
+//     text-align: right;
+//   }
+// }
 
 footer {
-  width: 400px;
+  width: 350px;
+  @media screen and (max-width: 400px) {
+    width: 310px;
+  }
   margin: 0 auto;
   text-align: center;
   a {
@@ -469,6 +503,9 @@ footer {
   }
 }
 .footer {
+  @media screen and (max-width: 400px) {
+    font-size: 0.9rem;
+  }
   position: relative;
   z-index: 1;
   color: #fff;
